@@ -32,9 +32,9 @@
 						<div class="menu-title">Brands</div>
 					</a>
 					<ul>
-						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						<li> <a href="{{route('all.brand')}}"><i class="bx bx-right-arrow-alt"></i>All Brand</a>
 						</li>
-						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						<li> <a href="{{route('add.brand')}}"><i class="bx bx-right-arrow-alt"></i>Add Brand</a>
 						</li>
 						
 					</ul>
@@ -43,12 +43,40 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-category"></i>
 						</div>
-						<div class="menu-title">Application</div>
+						<div class="menu-title">Category</div>
 					</a>
 					<ul>
-						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						<li> <a href="{{route('all.category')}}"><i class="bx bx-right-arrow-alt"></i>All Category</a>
 						</li>
-						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						<li> <a href="{{route('add.category')}}"><i class="bx bx-right-arrow-alt"></i>Add Category</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="bx bx-category"></i>
+						</div>
+						<div class="menu-title">SubCategory</div>
+					</a>
+					<ul>
+						<li> <a href="{{route('all.subcategory')}}"><i class="bx bx-right-arrow-alt"></i>All SubCategory</a>
+						</li>
+						<li> <a href="{{route('add.subcategory')}}"><i class="bx bx-right-arrow-alt"></i>Add SubCategory</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="bx bx-category"></i>
+						</div>
+						<div class="menu-title">Product Manage</div>
+					</a>
+					<ul>
+						<li> <a href="{{route('all.subcategory')}}"><i class="bx bx-right-arrow-alt"></i>All Product</a>
+						</li>
+						<li> <a href="{{route('add.subcategory')}}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
 						</li>
 						
 					</ul>
@@ -59,17 +87,14 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-cart'></i>
 						</div>
-						<div class="menu-title">eCommerce</div>
+						<div class="menu-title">Vendor Manage</div>
 					</a>
 					<ul>
-						<li> <a href="ecommerce-products.html"><i class="bx bx-right-arrow-alt"></i>Products</a>
+						<li> <a href="{{route('inactive.vendor')}}"><i class="bx bx-right-arrow-alt"></i>Inactive Vendor</a>
 						</li>
-						<li> <a href="ecommerce-products-details.html"><i class="bx bx-right-arrow-alt"></i>Product Details</a>
+						<li> <a href="{{route('active.vendor')}}"><i class="bx bx-right-arrow-alt"></i>Active Vendor</a>
 						</li>
-						<li> <a href="ecommerce-add-new-products.html"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
-						</li>
-						<li> <a href="ecommerce-orders.html"><i class="bx bx-right-arrow-alt"></i>Orders</a>
-						</li>
+						
 					</ul>
 				</li>
 				
@@ -77,15 +102,14 @@
 					<a class="has-arrow" href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-repeat"></i>
 						</div>
-						<div class="menu-title">Content</div>
+						<div class="menu-title">Product Manage</div>
 					</a>
 					<ul>
-						<li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
+						<li> <a href="content-grid-system.html"><i class="bx bx-right-arrow-alt"></i>All Product</a>
 						</li>
-						<li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Typography</a>
+						<li> <a href="content-typography.html"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
 						</li>
-						<li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
-						</li>
+						
 					</ul>
 				</li>
 			

@@ -1,5 +1,5 @@
-@extends('admin.admin_dashboard')
-@section('admin')
+@extends('vendor.vendor_dashboard')
+@section('vendor')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     	<div class="page-content"> 
 				<!--breadcrumb-->
@@ -66,7 +66,7 @@
 										</div>
 										<div class="row mb-3">
 											<div class="col-sm-3">
-												<h6 class="mb-0">Full Name</h6>
+												<h6 class="mb-0">Shop Name</h6>
 											</div>
 											<div class="col-sm-9 text-secondary">
 												<input type="text" class="form-control" name="name" value="{{ $vendorData->name }}" />
@@ -74,7 +74,7 @@
 										</div>
 										<div class="row mb-3">
 											<div class="col-sm-3">
-												<h6 class="mb-0">Email</h6>
+												<h6 class="mb-0">Vendor Email</h6>
 											</div>
 											<div class="col-sm-9 text-secondary">
 												<input type="email" class="form-control" name="email" value="{{ $vendorData->email }}" />
@@ -82,7 +82,7 @@
 										</div>
 										<div class="row mb-3">
 											<div class="col-sm-3">
-												<h6 class="mb-0">Phone</h6>
+												<h6 class="mb-0">Vendor Phone</h6>
 											</div>
 											<div class="col-sm-9 text-secondary">
 												<input type="text" class="form-control" name="phone" value="{{ $vendorData->phone }}" />
@@ -91,10 +91,46 @@
 										
 										<div class="row mb-3">
 											<div class="col-sm-3">
-												<h6 class="mb-0">Address</h6>
+												<h6 class="mb-0">Vendor Address</h6>
 											</div>
 											<div class="col-sm-9 text-secondary">
 												<input type="text" class="form-control" name="address" value="{{ $vendorData->address }}" />
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="col-sm-3">
+												<h6 class="mb-0">Vendor Join Date</h6>
+											</div>
+											<div class="col-sm-9 text-secondary">
+											<select name="vendor_join" class="form-select mb-3" aria-label="Default select example">
+												<option selected="">Open this select Join Date</option>	
+                                                <option value="2022"
+													{{ $vendorData->vendor_join == 2022 ? 'selected' : '' }}
+												>2022</option>	
+                                                <option value="2023"
+													{{ $vendorData->vendor_join == 2023 ? 'selected' : '' }}
+												>2023</option>	
+                                                <option value="2024"
+													{{ $vendorData->vendor_join == 2024 ? 'selected' : '' }}
+												>2024</option>	
+                                                <option value="2025"
+													{{ $vendorData->vendor_join == 2025 ? 'selected' : '' }}
+												>2025</option>	
+                                                <option value="2026"
+													{{ $vendorData->vendor_join == 2026 ? 'selected' : '' }}
+												>2026</option>																					
+			
+											</select>
+											</div>
+										</div>
+										<div class="row mb-3">
+											<div class="col-sm-3">
+												<h6 class="mb-0">Vendor Info</h6>
+											</div>
+											<div class="col-sm-9 text-secondary">
+												<textarea name="vendor_short_info" class="form-control" id="inputAddress2" placeholder="Address ..." rows="3">
+													{{ $vendorData->vendor_short_info }}
+												</textarea>	
 											</div>
 										</div>
 										<div class="row mb-3">
