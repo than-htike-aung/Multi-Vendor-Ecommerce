@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
 	<link rel="icon" href="{{ asset('adminbackend/assets/images/favicon-32x32.png') }}" type="image/png" />
+	<link href="{{asset('adminbackend/assets/plugins/input-tags/css/tagsinput.css')}}" rel="stylesheet" />
 	<!--plugins-->
 	<link href="{{ asset('adminbackend/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet"/>
 	<link href="{{ asset('adminbackend/assets/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
@@ -29,6 +30,8 @@
 	<!-- Datatable CSS -->
 	<link href="{{asset('adminbackend/assets/plugins/datatable/css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" />
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Admin - Dashboard</title>
 </head>
 
@@ -60,6 +63,7 @@
 	<!-- Bootstrap JS -->
 	<script src="{{ asset('adminbackend/assets/js/bootstrap.bundle.min.js') }}"></script>
 	<!--plugins-->
+	
 	<script src="{{ asset('adminbackend/assets/js/jquery.min.js') }}"></script>
 	<script src="{{ asset('adminbackend/assets/plugins/simplebar/js/simplebar.min.js') }}"></script>
 	<script src="{{ asset('adminbackend/assets/plugins/metismenu/js/metisMenu.min.js') }}"></script>
@@ -79,7 +83,7 @@
 	  <script src="{{ asset('adminbackend/assets/js/index.js') }}"></script>
 	<!--app JS-->
 	<script src="{{ asset('adminbackend/assets/js/app.js') }}"></script>
-
+	<script src="{{asset('adminbackend/assets/plugins/input-tags/js/tagsinput.js')}}"></script>
 	<!--Datatable JS-->
 	<script src="{{asset('adminbackend/assets/plugins/datatable/js/jquery.dataTables.min.js')}}"></script>
 	<script src="{{asset('adminbackend/assets/plugins/datatable/js/dataTables.bootstrap5.min.js')}}"></script>
@@ -119,7 +123,13 @@
  }
  @endif 
 </script>
-
+<script src='https://cdn.tiny.cloud/1/vdqx2klew412up5bcbpwivg1th6nrh3murc6maz8bukgos4v/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+	</script>
+	<script>
+		tinymce.init({
+		  selector: '#mytextarea'
+		});
+	</script>
 </body>
 
 </html>
